@@ -1,3 +1,90 @@
+/* COLORES PERSONALIZADOS */
+.color-amarillo {
+    color: #FFD236;
+  }
+  .bg-amarillo {
+    background-color: #FFD236;
+  }
+  .color-blanco {
+    color: #F6F6F6;
+  }
+  .bg-blanco {
+    background-color: #F6F6F6;
+  }
+  .color-negro {
+    color: #000000;
+  }
+  .bg-negro {
+    background-color: #000000;
+  }
+  .color-verde-claro {
+    color: #71BA45;
+  }
+  .bg-verde-claro {
+    background-color: #71BA45;
+  }
+  .color-verde {
+    color: #549C3C;
+  }
+  .bg-verde {
+    background-color: #549C3C;
+  }
 
+/*tipografia*/
 
+/*padding secciones*/
+.padding-section{
+  padding: 90px 0;
+}
+.padding-lateral-section{
+  padding: 0 100px;
 
+}
+/*about-section*/
+div#about-section {
+  background-image: url('/img/bg-oil.webp');
+  background-size: cover;
+  background-position: top center;
+  z-index: 1;
+}
+/*process-section*/
+div#process-section{
+  position: relative;
+  background-image: url('/img/freidora-de-aceite-en-restaurante.webp');
+  z-index: 1;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #F6F6F6;
+}
+#process-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(84, 156, 60, 0.85) 0%,
+    rgba(84, 156, 60, 0.85) 100%
+  );
+  z-index: 2;
+}
+#process-section > * {
+  position: relative;
+  z-index: 3;
+}
+.card-process{
+color: #000000;
+border-radius: 15px;
+text-align: center;
+padding: 15px;
+
+}
+.separador{
+  display: block;
+  width: 50px;
+  height: 5px;
+  background: #FFD236;
+  margin: 0 auto;
+}
+.img-process{
+margin-top: -65px;
+}
