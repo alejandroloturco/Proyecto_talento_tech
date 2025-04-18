@@ -1,0 +1,120 @@
+.inputtxt{
+    display: block;
+    width:90%;
+    height: 30px;
+    border:0;
+    border-radius: 20px;
+    background-color: rgba(255,255,255,0.8);
+
+}
+
+#contenedor1input label{
+    display: block;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.formulario-cliente {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.titulo-formulario {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contenedor-inputs {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 15px;
+    align-items: center;
+}
+
+.contenedor-inputs label {
+    font-weight: bold;
+    margin-bottom: 0;
+    display: block;
+    color: #555;
+}
+
+.inputtxt, .select-pais, .textarea-mensaje {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.textarea-mensaje {
+    resize: none;
+    height: 80px;
+}
+
+.estado-civil {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin-top: 20px;
+}
+
+.estado-civil label {
+    font-weight: bold;
+    color: #555;
+}
+
+.estado-civil div {
+    margin-bottom: 10px;
+}
+
+.radio-estado-civil {
+    margin-right: 5px;
+}
+
+.btn-guardar {
+    background-color: #4c91af;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+}
+
+.btn-guardar:hover {
+    background-color: #4686b0;
+}
+
+.select-pais {
+    background-color: #fff;
+    margin-top: 10px;
+}
+
+.textarea-mensaje {
+    margin-top: 10px;
+}
+
+.section2{
+    margin-top: 10px;
+}
+
