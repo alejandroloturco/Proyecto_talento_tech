@@ -1,0 +1,35 @@
+#footer{
+    display: flex;
+    width: 100%;
+    background-color: #549C3C;
+    padding: 20px; 
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+    align-items: center;
+    font-family:  Arial, sans-serif;
+    color: white;
+    
+    
+}
+
+#redes{
+    width: 50%;
+    text-align: center;
+}
+#contactos{
+    width: 50%;
+   
+}
+#contactos p{
+    margin-left: 30%;
+    
+}
+a svg {
+    transition: fill 0.3s ease;
+    margin-left: 10px;
+}
+
+a:hover svg {
+    fill: #454945; /* Cambia a un color amarillo dorado al hacer hover */
+}
