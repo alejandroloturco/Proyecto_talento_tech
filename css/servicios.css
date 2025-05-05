@@ -1,0 +1,21 @@
+#section2{
+    margin-top: 40px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+
+}
+#art3{
+    width: 60%;
+    font-size: 15px;
+    margin-left: 40px;
+    font-family:  Arial, sans-serif;
+    align-content: center;
+    margin-right: 80px;
+}
+#art4 {
+    
+    width: 40%;
+    align-content: center;
+
+}

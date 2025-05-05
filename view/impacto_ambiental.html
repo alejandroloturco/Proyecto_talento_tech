@@ -6,6 +6,8 @@
     <title>ReOil PLanet, Aceite usado comvertido en futuro sostenible</title>
     
     <link rel="stylesheet" href="../css/formulario.css">
+    <link rel="stylesheet" href="../css/main.css"> 
+    <link rel="stylesheet" href="../css/servicios.css">
    
 </head>
 <body>
@@ -20,10 +22,94 @@
             .catch(error => console.error('Error al cargar el header:', error));
     </script>
     </div>
-    <h1 class="titulo-formulario">Impacto Ambiental</h1>
+    <h1 class="titulo-formulario">Transformando residuos en soluciones sostenibles</h1>
 
+    <article id="arti1" class="recoleccion">
+        <p> El aceite de cocina usado es uno de los residuos domésticos más comunes y, a menudo, uno de los más mal manejados. 
+            Su vertido en desagües o terrenos puede causar graves problemas ambientales, como la contaminación de ríos, mares y 
+            fuentes de agua potable, además de afectar negativamente a los ecosistemas acuáticos. En ReoilPlanet, trabajamos para
+             convertir este desafío en una oportunidad, transformando el aceite usado en recursos útiles y fomentando prácticas 
+             responsables en hogares y empresas.</p>
+    </article>
+
+    <div id="process-section" class="padding-section">
+        <div class="container">
+            <div>
+                <h2 class="h2 text-center">El aceite vertido en el desagüe provoca bloqueos en sistemas de alcantarillado
+                     y dificulta el tratamiento de aguas residuales</h2>
+
+            </div>
+
+            <div class="row g-5 padding-lateral-section">
+                <div class="col-md-4 ">
+                    <div class="card-process bg-blanco">
+                        <img src="/img/beneficios.png" alt="" class="img-process">
+                        <h3 class="h3 text-center">Beneficios del reciclaje de aceite usado</h3>
+                        <span class="separador"></span>
+                        <p class="text-center">El reciclaje de aceite usado no solo evita la contaminación ambiental, sino
+                             que también genera beneficios directos para el planeta. Al transformar el aceite en biodiésel
+                              u otros productos, reducimos la dependencia de combustibles fósiles y las emisiones de carbono.
+                               Además, esta práctica protege el agua, un recurso vital, y fomenta un modelo de economía circular 
+                               donde los residuos encuentran una nueva vida útil.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="card-process bg-blanco">
+                        <img src="/img/impacto.png" alt="" class="img-process">
+                        <h3 class="h3 text-center">Nuestro impacto positivo</h3>
+                        <span class="separador"></span>
+                        <p class="text-center"> En ReoilPlanet, cada gota de aceite reciclado cuenta. Hasta ahora, hemos ayudado a evitar 
+                            la contaminación de miles de litros de agua y contribuido a la reducción de toneladas de emisiones de CO₂.
+                             Nuestro compromiso con la sostenibilidad se refleja en nuestras acciones y resultados, demostrando que el
+                              cambio es posible cuando todos trabajamos juntos por el medio ambiente.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="card-process bg-blanco">
+                        <img src="/img/Gestion.webp" alt="" class="img-process">
+                        <h3 class="h3 text-center">Educación y conciencia ambiental</h3>
+                        <span class="separador"></span>
+                        <p class="text-center">El primer paso para un cambio real es la educación. Por eso, en ReoilPlanet creamos materiales y 
+                            recursos educativos que explican cómo manejar correctamente el aceite usado, sus riesgos si no se recicla y 
+                            los beneficios de convertirlo en recursos sostenibles. Creemos que cuando las personas entienden el impacto de 
+                            sus acciones, se inspiran a tomar decisiones más responsables.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="card-process bg-blanco">
+                        <img src="/img/Certificacion.webp" alt="" class="img-process">
+                        <h3 class="h3 text-center">Llamado a la acción</h3>
+                        <span class="separador"></span>
+                        <p class="text-center">El cambio comienza contigo. En ReoilPlanet, hacemos que el reciclaje de aceite usado sea sencillo, 
+                            accesible y efectivo. Únete a nuestra misión de proteger el agua, reducir las emisiones de carbono y
+                             promover un futuro más sostenible. Cada gota cuenta, y con tu ayuda, 
+                            podemos marcar una diferencia real para el planeta. <b>¡Recicla tu aceite hoy y sé parte del cambio!</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="graficas">
+        <p>Graficas</p>
+    </section>
+
+
+
+    <div id="footer">
+        <script>
+            // Cargar el contenido de header.html
+            fetch('./footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer').innerHTML = data;
+                })
+                .catch(error => console.error('Error al cargar el footer:', error));
+        </script>
+        </div>
+</body>
 
 
     
-</body>
+
 </html>
