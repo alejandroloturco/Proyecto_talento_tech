@@ -1,3 +1,20 @@
-header{ 
-
+#mail-topbar {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+p.txt-top-bar{
+    margin-bottom: 0px;
+}
+#top-bar{
+    padding: 10px 0;
+}
+img#logo-principal {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 0 15px rgb(83 83 83 / 35%);
+}
+#logo{
+    margin-top: -45px;
 }

@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.css">
     <!--  CSS personalizado -->
-    
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/main.css">
     <script src="../js/index.js"></script>
+    <!-- Font awesome iconos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
 
 </head>
@@ -19,45 +20,38 @@
     <header>
         <section id="top-bar" class="bg-verde color-blanco">
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-4"></div>
-                    <div class="col-md-4">
-                        <p>Transformamos aceite en sostenibilidad</p>
-                    </div>
-                    <div class="col-md-4">
-                        <span>icon</span>
-                        <p>info@reoilplanet.com.co</p>                
+                <div class="row">
+                    <div class="d-flex justify-content-end gap-4">
+                        <p class="txt-top-bar">Transformamos aceite en sostenibilidad</p>
+                        <div class="d-flex gap-1">
+                            <span><i class="fa-solid fa-envelope"></i></span>
+                            <p class="txt-top-bar">info@reoilplanet.com.co</p>   
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="nav-header" class="container">
-            <div class="row align-items-center">
+        <section id="nav-header" class="container ">
+            <div class="row align-items-center justify-content-between">
                 <div id="logo" class="col-md-3">
-                    <img src="/img/logo reoilplanet.webp" alt="logo reoil planet">
+                    <img src="/img/logo reoilplanet.webp" alt="logo reoil planet" id="logo-principal">
                 </div>
-                <div id="nav" class="col-md-8">
+                <div id="nav" class="col-md-8 d-flex justify-content-end">
                 <ul class="nav">
                     <li class="nav-item">
-                    <a class="nav-link active" href="#" onclick="window.location.href='./index.html'">Inicio</a>
+                    <a class="nav-link color-negro active" href="#" onclick="window.location.href='./index.html'">Inicio</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#" onclick="window.location.href='./Servicios.html'">Servicios</a>
+                    <a class="nav-link color-negro" href="#" onclick="window.location.href='./Servicios.html'">Servicios</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#" onclick="window.location.href='./quienes_somos.html'">¿Quiénes somos?</a>
+                    <a class="nav-link color-negro" href="#" onclick="window.location.href='./quienes_somos.html'">¿Quiénes somos?</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#" onclick="window.location.href='./impacto_ambiental.html'">Impacto Ambiental</a>
+                    <a class="nav-link color-negro" href="#" onclick="window.location.href='./impacto_ambiental.html'">Impacto Ambiental</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#" onclick="window.location.href='./contactanos.html'">Contáctanos</a>
-                    </li>
-                    <li class="nav-item">
-                    <button class="btn btn-primary" onclick="window.location.href='./recoleccion.html'">Solicitar Recolección</button>
-                    </li>
-                    <li class="nav-item">
-                    <button class="btn btn-primary" onclick="window.location.href='./formulario.html'">Registrate</button>
+                    <button class="btn btn-primary" onclick="window.location.href='./formulario.html'">Contáctanos</button>
                     </li>
                 </ul>
                 </div>
