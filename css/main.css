@@ -117,6 +117,7 @@ div#process-section{
   background-attachment: fixed;
   color: #F6F6F6;
  }
+
 #process-section::before {
   content: "";
   position: absolute;
@@ -139,11 +140,16 @@ border-radius: 15px;
 text-align: center;
 padding: 15px;
 min-height: 300px;
-margin-top: -8rem;
-
 }
+.mt-negative{
+  margin-top: -8rem;
+}
+/* Sombras */
 .box-shadow{
   box-shadow: 0px 5.845px 43.837px 0px rgba(0, 0, 0, 0.08);
+}
+.text-shadow {
+  text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
 }
 .separador{
   display: block;

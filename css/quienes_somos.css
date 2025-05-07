@@ -13,126 +13,44 @@
         font-weight: bold;
     }
 
-#section1{
-    position: relative; /* Permite posicionar el texto sobre la imagen */
-    background-image: url(/img/Quienes_somos.jpg.jpg);
-    width: 100%;
-    /*height: 100vh; /* Ocupa toda la altura de la ventana */
-    background-size: cover; /* Ajusta la imagen para que cubra el área */
-    background-position: center; /* Centra la imagen */
-    height: 180px;
-    object-fit: cover;
-    height: 10em;
-    
+div#mision-vision{
+    position: relative;
+    background-image: url("/img/bg-bosque-1.webp");
+    z-index: 1;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #F6F6F6;
+   }
+  
+  #mision-vision::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(
+      0deg,
+      rgba(84, 156, 60, 0.85) 0%,
+      rgba(84, 156, 60, 0.85) 100%
+    );
+    z-index: 2;
+  }
+#mision-vision> * {
+    position: relative;
+    z-index: 3;
+  }
+  button.nav-link.color-blanco {
+    padding: 10px 30px;
+    background: rgb(51 51 51 / 35%);
 }
-#historia{
-    margin-left: 80px;
-    margin-top: 20px;
-    color: rgb(59, 170, 59);
-}
-
-#section2{
-    margin-top: 40px;
-    display: flex;
-    width: 100%;
-    align-items: center;
-
-}
-#art1 h1 {
-    margin-top: 2px;
-    color: rgb(59, 170, 59);
-    font-size: 28px;
-}
-#art1{
-    width: 60%;
-    font-size: 15px;
-    margin-left: 80px;
-    font-family:  Arial, sans-serif;
-}
-#art2{
-    width: 40%;
-    align-content: center;
-}
-.imagen img{
-    align-content: center;
-    height: 20em;
-    width: 400px;
-    object-fit: cover;
-    margin-left: 100px;
-    margin-right: 100px;
-    opacity: 0.8;
-    transition: opacity 0.3s ease;
-}
-.imagen img:hover{
-    opacity: 1;
-}
-#hasta-la-fecha h1{
-    font-size: 25px;
-    color: rgb(90, 190, 90);
-    margin-left: 80px;
-    margin-right: 60px;
-    margin-top: 20px;
-    font-family:  Arial, sans-serif;
-}
-#section3{
-    margin-top: 40px;
-    display: flex;
-    width: 100%;
-    align-items: center;
-}
-
-#art4 h1{
-    margin-top: 2px;
-    color: rgb(59, 170, 59);
-    font-size: 28px; 
-}
-#art3{
-    width: 40%;
-    align-content: center;
-}
-#art4 {
-    width: 60%;
-    font-size: 15px;
-    margin-left: 40px;
-    font-family:  Arial, sans-serif;
-    align-content: center;
-    margin-right: 80px;
-
-}
-#section4{
-    display: flex;
-    background-size: contain;
-    width: auto;
-    margin-left: 60px;
-    margin-right: 80px;
-    font-family:  Arial, sans-serif;
-}
-
-.art h1{
-    color: rgb(10, 79, 20);
-    font-size: 23px;
-}
-
-#art5{
-    background-color: rgb(178, 223, 178);
-}
-#art6{
-    background-color: rgb(140, 197, 140);
-}
-#art7{
-    background-color: rgb(178, 223, 178);
-}
-#art8{
-    background-color: rgb(140, 197, 140);
-}
-
-.art {
+.icon-valores {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #ffd236;
+    border-radius: 50%;
+    border: 1px solid;
     padding: 15px;
-    font-size: 15px;
-    font-family:  Arial, sans-serif;
-    border-radius: 50px 10px 40px 5px;
-    box-shadow: 0px 10px 30px rgba(6, 26, 8, 0.5);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-left: 10px;
-
+    width: 92px;
+    height: 92px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+    margin-top: -50px;
+    background-color: white;
 }
