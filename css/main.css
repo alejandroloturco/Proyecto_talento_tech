@@ -97,8 +97,12 @@ p{
   padding: 0 100px;
 
 }
+/* Margenes */
+.margin-top-XL{
+  margin-top: 13rem;
+}
 /*about-section*/
-div#about-section {
+div.fondo-burbujas {
   background-image: url('/img/bg-oil.webp');
   background-size: cover;
   background-position: top center;
