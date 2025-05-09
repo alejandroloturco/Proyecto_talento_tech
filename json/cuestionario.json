@@ -1,0 +1,62 @@
+[
+ {
+  "registrado": "Si",
+  "reutiliza_aceite": "No",
+  "tira_aceite": "No",
+  "conoce_puntos": "Si",
+  "sabe_contaminacion": "Si",
+  "dispuesto_entregar": "No",
+  "interes_reciclaje": "Si",
+  "cocina_casa": "No",
+  "uso_aceite": "Si",
+  "separa_residuos": "Si",
+  "recipiente_especial": "Si",
+  "tipo_recoleccion": "casa",
+  "pago_servicio": "Si"
+ },
+ {
+  "registrado": "No",
+  "reutiliza_aceite": "No",
+  "tira_aceite": "No",
+  "conoce_puntos": "No",
+  "sabe_contaminacion": "No",
+  "dispuesto_entregar": "No",
+  "interes_reciclaje": "No",
+  "cocina_casa": "No",
+  "uso_aceite": "No",
+  "separa_residuos": "No",
+  "recipiente_especial": "No",
+  "tipo_recoleccion": "punto_fijo",
+  "pago_servicio": "No"
+ },
+ {
+  "registrado": "No",
+  "reutiliza_aceite": "No",
+  "tira_aceite": "No",
+  "conoce_puntos": "No",
+  "sabe_contaminacion": "No",
+  "dispuesto_entregar": "No",
+  "interes_reciclaje": "No",
+  "cocina_casa": "No",
+  "uso_aceite": "No",
+  "separa_residuos": "No",
+  "recipiente_especial": "No",
+  "tipo_recoleccion": "punto_fijo",
+  "pago_servicio": "No"
+ },
+ {
+  "registrado": "Si",
+  "reutiliza_aceite": "Si",
+  "tira_aceite": "Si",
+  "conoce_puntos": "Si",
+  "sabe_contaminacion": "Si",
+  "dispuesto_entregar": "Si",
+  "interes_reciclaje": "Si",
+  "cocina_casa": "Si",
+  "uso_aceite": "Si",
+  "separa_residuos": "Si",
+  "recipiente_especial": "Si",
+  "tipo_recoleccion": "casa",
+  "pago_servicio": "Si"
+ }
+]
