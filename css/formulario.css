@@ -113,7 +113,20 @@ body {
     margin-top: 10px;
 }
 
-.section2{
+.pregunta {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+}
+
+.opciones {
+    display: flex;
+    gap: 20px;
     margin-top: 10px;
+}
+
+.opciones input[type="radio"] {
+    margin-right: 5px;
 }
 

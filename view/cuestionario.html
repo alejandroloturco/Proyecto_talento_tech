@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuestionario Ambiental - ReOil Planet</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/formulario.css">
+</head>
+<body>
+    <div id="header">
+        <script>
+            fetch('./header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header').innerHTML = data;
+                })
+                .catch(error => console.error('Error al cargar el header:', error));
+        </script>
+    </div>
+
+    <div class="container">
+        <h1 class="titulo-formulario">Cuestionario Ambiental</h1>
+        
+        <form id="cuestionarioForm" class="form-datos-cliente">
+            <div class="pregunta">
+                <p>Antes de empezar... ¿Está registrado con nosotros?</p>
+                <div class="opciones">
+                    <input type="radio" name="registrado" value="Si" required> Sí
+                    <input type="radio" name="registrado" value="No"> No
+                </div>
+            </div>
+
+            <div class="pregunta">
+                <p>1. ¿Reutilizas el aceite de cocina más de una vez?</p>
+                <div class="opciones">
+                    <input type="radio" name="reutiliza_aceite" value="Si" required> Sí
+                    <input type="radio" name="reutiliza_aceite" value="No"> No
+                </div>
+            </div>
+
+            <div class="pregunta">
+                <p>2. ¿Tiras el aceite usado por el desagüe o inodoro?</p>
+                <div class="opciones">
+                    <input type="radio" name="tira_aceite" value="Si" required> Sí
+                    <input type="radio" name="tira_aceite" value="No"> No
+                </div>
+            </div>
+
+            <div class="pregunta">
+                <p>3. ¿Conoces puntos de recolección de aceite usado en tu zona?</p>
+                <div class="opciones">
+                    <input type="radio" name="conoce_puntos" value="Si" required> Sí
+                    <input type="radio" name="conoce_puntos" value="No"> No
+                </div>
+            </div>
+
+            <div class="pregunta">
+                <p>4. ¿Sabías que el aceite usado contamina el agua?</p>
+                <div class="opciones">
+                    <input type="radio" name="sabe_contaminacion" value="Si" required> Sí
+                    <input type="radio" name="sabe_contaminacion" value="No"> No
+                </div>
+            </div>
+
+            <div class="pregunta">
+                <p>5. ¿Estarías dispuesto(a) a entregar tu aceite usado si existiera un servicio gratuito de recolección?</p>
+                <div class="opciones">
+                    <input type="radio" name="dispuesto_entregar" value="Si" required> Sí
+                    <input type="radio" name="dispuesto_entregar" value="No"> No
+                </div>
+            </div>
+
+            <div class="pregunta">
+                <p>6. ¿Te interesa participar en actividades ecológicas o de reciclaje?</p>
+                <div class="opciones">
+                    <input type="radio" name="interes_reciclaje" value="Si" required> Sí
+                    <input type="radio" name="interes_reciclaje" value="No"> No
+                </div>
+            </div>
+
+            <div class="pregunta">
+                <p>7. ¿Cocinas regularmente en casa?</p>
+                <div class="opciones">
+                    <input type="radio" name="cocina_casa" value="Si" required> Sí
+                    <input type="radio" name="cocina_casa" value="No"> No
+                </div>
+            </div>
+
+            <div class="pregunta">
+                <p>8. ¿Utilizas más aceite que otras formas de cocción (como vapor o al horno)?</p>
+                <div class="opciones">
+                    <input type="radio" name="uso_aceite" value="Si" required> Sí
+                    <input type="radio" name="uso_aceite" value="No"> No
+                </div>
+            </div>
+
+            <div class="pregunta">
+                <p>9. ¿Separas los residuos orgánicos e inorgánicos en tu hogar?</p>
+                <div class="opciones">
+                    <input type="radio" name="separa_residuos" value="Si" required> Sí
+                    <input type="radio" name="separa_residuos" value="No"> No
+                </div>
+            </div>
+
+            <div class="pregunta">
+                <p>10. ¿Te gustaría recibir un recipiente especial para almacenar aceite usado?</p>
+                <div class="opciones">
+                    <input type="radio" name="recipiente_especial" value="Si" required> Sí
+                    <input type="radio" name="recipiente_especial" value="No"> No
+                </div>
+            </div>
+
+            <div class="pregunta">
+                <p>11. ¿Prefieres que el servicio de recolección pase por tu casa o llevar el aceite a un punto fijo?</p>
+                <div class="opciones">
+                    <input type="radio" name="tipo_recoleccion" value="casa" required> Recolección en casa
+                    <input type="radio" name="tipo_recoleccion" value="punto_fijo"> Llevar a punto fijo
+                </div>
+            </div>
+
+            <div class="pregunta">
+                <p>12. ¿Estarías dispuesto a pagar una pequeña cantidad por el servicio de recolección?</p>
+                <div class="opciones">
+                    <input type="radio" name="pago_servicio" value="Si" required> Sí
+                    <input type="radio" name="pago_servicio" value="No"> No
+                </div>
+            </div>
+
+            <button type="submit" class="btn-guardar" style="background-color: rgb(100, 194, 70); color: white;">Enviar Respuestas</button>
+        </form>
+    </div>
+
+    <div id="footer">
+        <script>
+            // Cargar el contenido de footer.html
+            fetch('./footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer').innerHTML = data;
+                })
+                .catch(error => console.error('Error al cargar el footer:', error));
+        </script>
+    </div>
+
+    <script src="../js/cuestionario.js"></script>
+</body>
+</html>
