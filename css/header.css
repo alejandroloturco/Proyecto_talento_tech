@@ -17,7 +17,8 @@ img#logo-principal {
 }
 #logo{
     display: inline-block;
-    margin-top: -75px;
+    top: -44px;
+    position: absolute;
 }
 
 #logo img {
@@ -27,6 +28,13 @@ img#logo-principal {
 #nav .d-flex {
     width: 100%;
 }
+div#nav {
+    margin-left: 220px;
+}
+a.nav-link.color-negro {
+    padding: 5px 15px;
+    font-size: 15px;
+}
 
 .btn-outline-custom {
     color: #198754;  
@@ -34,6 +42,7 @@ img#logo-principal {
     background-color: transparent;
     border-radius: 5px;  
     transition: all 0.3s ease;
+    padding: 7px;
 }
 
 .btn-outline-custom:hover {
@@ -104,4 +113,11 @@ img#logo-principal {
     .separator {
         display: none;
     }
+    #logo {
+   
+    left: 0;
+    }
+    #nav-header .d-flex {
+    gap: 1rem;
+}
 }

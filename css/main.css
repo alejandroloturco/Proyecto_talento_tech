@@ -162,3 +162,26 @@ min-height: 300px;
 margin-top: -65px;
 margin-bottom: 1rem;
 }
+/*imagenes con decoración, tamaño adaptativo*/
+img.custom-size {
+    width: 100%;
+}
+
+.custom-wrap{
+  flex-wrap: wrap;
+    gap: 25px;
+}
+
+/* RESPONSIVE */
+/* TABLETS */
+@media only screen and (max-width: 1024px) {
+
+  html {
+    font-size: 90%; /* Equivale a 14.4px si el valor base es 16px */
+  }
+  .padding-lateral-section {
+    margin-top: 40px;
+    padding: 0 40px;
+  }
+  
+}
