@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+from funciones import *
 
 visitantes = ["Registrados", "No Registrados"]
 # Lista de ejemplo con porcentaje  de visitantes en el orden de Registrados, No Registrados
@@ -21,5 +22,7 @@ plt.pie(
 
 plt.title("Visitantes Totales", fontsize=16, fontweight='bold')
 plt.tight_layout()
-plt.show()
+mover_carpeta('graficas')
+plt.savefig('visitantes.png', dpi=300, bbox_inches='tight')
+
 
