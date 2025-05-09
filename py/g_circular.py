@@ -1,16 +1,3 @@
-# import matplotlib.pyplot as plt
-
-# visitantes = ["Registrados", "No Registrados"]
-
-# #lista con ejemplos de porcentajes de visitantes que entraron a  la pagina en el orden registrados, no registrados
-# visitas = [20, 80]
-# #Defino una lista con colores alusivos a la pagina para aplicarla al grafico circular
-# colores=["#549C3C","#FFD33B"]
-# plt.pie(visitas, labels=visitantes, colors=colores, autopct='%1.1f%%')
-
-# plt.title("Visitantes totales")
-# plt.show()
-
 import matplotlib.pyplot as plt
 
 visitantes = ["Registrados", "No Registrados"]
