@@ -1,4 +1,3 @@
-import matplotlib.pyplot as plt
 from funciones import *
 
 visitantes = ["Registrados", "No Registrados"]
@@ -22,7 +21,9 @@ plt.pie(
 
 plt.title("Visitantes Totales", fontsize=16, fontweight='bold')
 plt.tight_layout()
+
 mover_carpeta('graficas')
-plt.savefig('visitantes.png', dpi=300, bbox_inches='tight')
+plt.savefig('output.png', dpi=300, bbox_inches='tight')
+plt.close()
 
 
