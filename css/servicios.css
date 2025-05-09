@@ -17,5 +17,23 @@
     
     width: 40%;
     align-content: center;
-
+}
+/*carrusel*/
+.carousel-control-prev, .carousel-control-next {
+    background: #549c3c;
+    height: 50px !important;
+    width: 50px !important;
+    border-radius: 50px;
+    position: absolute !important;
+    top: calc(50% - 25px) !important;
+}
+div#carrusel-sectores {
+    width: 600px;
+}
+.text-item-caruosel {
+    position: absolute;
+    bottom: 250px;
+    width: 250px;
+    text-wrap: auto;
+    left: calc(50% - 125px)
 }

@@ -52,9 +52,9 @@
     </div>
     <div class="bg-blanco mt-5"> 
         <div class="container">
-            <div id="contenido-proceso" class="row g-5 padding-lateral-section ">
+            <div id="contenido-proceso" class="row g-3 padding-lateral-section ">
                 <div class="col-md-3 ">
-                    <div class="card-process bg-blanco box-shadow">
+                    <div class="card-process bg-blanco box-shadow mt-negative">
                         <img src="/img/solicitud.webp" alt="" class="img-process">
                         <h3 class="h3 text-center">Solicitud</h3>
                         <span class="separador"></span>
@@ -64,7 +64,7 @@
                     </div>
                 </div>
                 <div class="col-md-3 ">
-                    <div class="card-process bg-blanco box-shadow">
+                    <div class="card-process bg-blanco box-shadow mt-negative">
                         <img src="/img/Recoleccion.webp" alt="" class="img-process">
                         <h3 class="h3 text-center">Recolección</h3>
                         <span class="separador"></span>
@@ -74,7 +74,7 @@
                     </div>
                 </div>
                 <div class="col-md-3 ">
-                    <div class="card-process bg-blanco box-shadow">
+                    <div class="card-process bg-blanco box-shadow mt-negative">
                         <img src="/img/Gestion.webp" alt="" class="img-process">
                         <h3 class="h3 text-center">Gestión</h3>
                         <span class="separador"></span>
@@ -84,7 +84,7 @@
                     </div>
                 </div>
                 <div class="col-md-3 ">
-                    <div class="card-process bg-blanco box-shadow">
+                    <div class="card-process bg-blanco box-shadow mt-negative">
                         <img src="/img/Certificacion.webp" alt="" class="img-process">
                         <h3 class="h3 text-center">Certificación</h3>
                         <span class="separador"></span>
@@ -116,11 +116,51 @@
                     ayudando a cada sector a reducir su impacto ambiental y promover prácticas sostenibles. Nuestra flexibilidad nos permite trabajar
                      con diferentes tipos de negocios e instituciones, convirtiendo un residuo dañino en una oportunidad para cuidar el planeta.
                       Si compartes nuestro compromiso con el medio ambiente, estamos listos para ayudarte a marcar la diferencia.</p>
+                      <button class="btn btn-secondary">Contactar un asesor</button>
             </article>
     
-            <article id="art4" class="imagen">
-                    <img src="/img/Restaurantes.webp" alt="">   
-                </article>
+            <div id="carrusel-sectores" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+              
+                  <div class="carousel-item active">
+                    <img src="/img/Restaurantes.webp" class="" alt="Imagen 1">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5 class="h4 text-item-caruosel">Restaurantes</h5>
+                    </div>
+                  </div>
+              
+                  <div class="carousel-item">
+                    <img src="/img/hoteles.webp" class="" alt="Imagen 2">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5 class="h4 text-item-caruosel">Hoteles</h5>
+                    </div>
+                  </div>
+              
+                  <div class="carousel-item">
+                    <img src="/img/Colegios.webp" class="" alt="Imagen 3">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5 class="h4 text-item-caruosel">Centros educativos</h5>
+                    </div>
+                  </div>
+              
+                  <div class="carousel-item">
+                    <img src="/img/Hogares_.webp" class="" alt="Imagen 4">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5 class="h4 text-item-caruosel">Hogares</h5>
+                    </div> 
+                  </div>
+              
+                </div>
+              
+                <button class="carousel-control-prev" type="button" data-bs-target="#carrusel-sectores" data-bs-slide="prev">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carrusel-sectores" data-bs-slide="next">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+              
+              </div>
+              
                    
         </section>
 <!-- Fin clientes -->
@@ -138,13 +178,15 @@
                     el agua y dañar los ecosistemas. Con este simple hábito, contribuyes a reducir la contaminación y a fomentar un manejo responsable de los residuos. 
                 </p>
                 <div class="d-flex justify-content-center">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/tHF7IttTymA?si=6pb5ECVNPrzJYhXi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/tHF7IttTymA?si=6pb5ECVNPrzJYhXi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="rounded-2"></iframe>
                 </div>
             </div>
         </div>
     </div>
 </div>
 </main>
+
+
 
     <div id="footer">
         <script>
@@ -157,6 +199,6 @@
                 .catch(error => console.error('Error al cargar el footer:', error));
         </script>
         </div>
-    
+    <script src="/libs/bootstrap/js/bootstrap.bundle.js"></script>
 </body>
 </html>
