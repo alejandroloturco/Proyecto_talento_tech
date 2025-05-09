@@ -10,12 +10,6 @@ if not os.path.isfile(ruta_contactos):
     set_json(ruta_contactos, [])
 else:
     data = get_json(ruta_contactos)
-    
-ruta = os.path.join(carpeta,'json', 'preguntas.json')    
-if not os.path.isfile(ruta):
-    set_json(ruta, [])
-else:
-    data = get_json(ruta)
 
 ruta_registro = os.path.join(carpeta,'json', 'registros.json')    
 if not os.path.isfile(ruta_registro):
