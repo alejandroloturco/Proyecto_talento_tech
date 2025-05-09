@@ -35,7 +35,7 @@ width = 0.35
 
 fig, ax = plt.subplots(figsize=(12, 6))
 barras_si1 = ax.bar(x1 - width/2, y1, width, label='Sí', color='green')
-barras_no1 = ax.bar(x1 + width/2, z1, width, label='No', color='red')
+barras_no1 = ax.bar(x1 + width/2, z1, width, label='No', color='yellow')
 ax.set_ylabel('Cantidad de respuestas')
 ax.set_title('Resultados del formulario sobre uso de aceite de cocina')
 ax.set_xticks(x1)
@@ -49,7 +49,7 @@ plt.close()
 
 fig, ax2 = plt.subplots(figsize=(12, 6))
 barras_si2 = ax2.bar(x2 - width/2, y2, width, label='Sí', color='green')
-barras_no2 = ax2.bar(x2 + width/2, z2, width, label='No', color='red')
+barras_no2 = ax2.bar(x2 + width/2, z2, width, label='No', color='yellow')
 ax2.set_ylabel('Cantidad de respuestas')
 ax2.set_title('Resultados del formulario sobre uso de aceite de cocina')
 ax2.set_xticks(x2)

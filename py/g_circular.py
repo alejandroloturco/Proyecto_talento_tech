@@ -7,7 +7,7 @@ visitas = [resultados[0][0],resultados[0][1]]
 colores = ["#549C3C", "#FFD33B"]
 explode = (0.05, 0)  # Destaca ligeramente el primer segmento (Registrados)
 
-plt.figure(figsize=(6, 6))  # Tamaño del gráfico
+plt.figure(figsize=(5, 5))  # Tamaño del gráfico
 plt.pie(
     visitas,
     labels=visitantes,
