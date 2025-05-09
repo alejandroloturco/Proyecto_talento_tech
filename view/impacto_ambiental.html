@@ -4,10 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ReOil PLanet, Aceite usado comvertido en futuro sostenible</title>
-    
-    <link rel="stylesheet" href="../css/formulario.css">
-    <link rel="stylesheet" href="../css/main.css"> 
-    <link rel="stylesheet" href="../css/servicios.css">
+
+    <link rel="stylesheet" href="../css/impacto_ambiental.css">
    
 </head>
 <body>
@@ -28,7 +26,7 @@
         <div id="hero-section" class="container padding-section">
             <h1 class="h1 text-center color-verde">Transformando residuos en soluciones sostenibles</h1>
                 <article id="arti1" class="ipacto">
-                     <p> El aceite de cocina usado es uno de los residuos domésticos más comunes y, a menudo, uno de los más mal manejados. 
+                     <p class="text-center"> El aceite de cocina usado es uno de los residuos domésticos más comunes y, a menudo, uno de los más mal manejados. 
                     Su vertido en desagües o terrenos puede causar graves problemas ambientales, como la contaminación de ríos, mares y 
                     fuentes de agua potable, además de afectar negativamente a los ecosistemas acuáticos. En ReoilPlanet, trabajamos para
                     convertir este desafío en una oportunidad, transformando el aceite usado en recursos útiles y fomentando prácticas 
@@ -103,11 +101,33 @@
                         </div>
                     </div>
 
-                    <div class="col-md-12">
-                        <div class="container d-flex justify-content-center">
-                        <button class="btn btn-primary"> <span><i class=""></i></span> Estadísticas</button>
+                    <!-- Botones para abril modal box -->
+                    <div class="d-flex col gap-4 justify-content-center">
+                        <!-- Botón 1 -->
+                        <div class="">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalGrafica1">
+                                <i class="fa-solid fa-chart-pie"></i> Ver gráfica 1
+                            </button>
+                        </div>
+
+
+                        <!-- Botón 2 -->
+                        <div class="">
+                        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modalGrafica2">
+                            <i class="fa-solid fa-chart-line"></i> Ver gráfica 2
+                        </button>
+                        </div>
+
+                        <!-- Botón 3 -->
+                        <div class="">
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalGrafica3">
+                            <i class="fa-solid fa-chart-column"></i> Ver gráfica 3
+                        </button>
                         </div>
                     </div>
+                    
+  
+  
                 </div>
             </div>
         
@@ -134,6 +154,8 @@
     </div>
 
 </main>
+<!-- Script modal box -->
+<script src="/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <div id="footer">
         <script>
@@ -146,6 +168,54 @@
                 .catch(error => console.error('Error al cargar el footer:', error));
         </script>
         </div>
+
+<!-- Modal box -->
+ <!-- Grafica 1 -->
+<div class="modal fade" id="modalGrafica1" tabindex="-1" aria-labelledby="modalGrafica1Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title h5" id="modalGrafica1Label">Gráfica 1</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="/graficas/output.png" alt="Gráfica 1" class="img-grafica img-fluid">
+        </div>
+      </div>
+    </div>
+</div>
+
+<!-- Grafica 2 -->
+<div class="modal fade" id="modalGrafica2" tabindex="-1" aria-labelledby="modalGrafica2Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title h5" id="modalGrafica2Label">Gráfica 2</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="/graficas/output2.png" alt="Gráfica 2" class="img-grafica img-fluid">
+        </div>
+      </div>
+    </div>
+</div>
+  
+<!-- Grafica 3 -->
+<div class="modal fade" id="modalGrafica3" tabindex="-1" aria-labelledby="modalGrafica3Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title h5" id="modalGrafica3Label">Gráfica 3</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="/graficas/output3.png" alt="Gráfica 3" class="img-grafica img-fluid">
+        </div>
+      </div>
+    </div>
+</div>
+  
+  
 </body>
 
 
