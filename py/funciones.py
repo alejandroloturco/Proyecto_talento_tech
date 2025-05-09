@@ -25,11 +25,12 @@ def get_json(ruta):
 data = get_json('json/cuestionario.json')
 resultados = []
 llaves = list(data[0].keys())
+
 for item in data:
     if item["tipo_recoleccion"] == "casa":
-        item["tipo_recoleccion"] = "si"
+        item["tipo_recoleccion"] = "Si"
     elif item["tipo_recoleccion"] == "punto_fijo":
-        item["tipo_recoleccion"] = "no"
+        item["tipo_recoleccion"] = "No"
 
 
 for llave in llaves:

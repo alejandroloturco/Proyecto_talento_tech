@@ -58,5 +58,20 @@
   "recipiente_especial": "Si",
   "tipo_recoleccion": "casa",
   "pago_servicio": "Si"
+ },
+ {
+  "registrado": "Si",
+  "reutiliza_aceite": "Si",
+  "tira_aceite": "Si",
+  "conoce_puntos": "Si",
+  "sabe_contaminacion": "Si",
+  "dispuesto_entregar": "Si",
+  "interes_reciclaje": "Si",
+  "cocina_casa": "Si",
+  "uso_aceite": "Si",
+  "separa_residuos": "Si",
+  "recipiente_especial": "Si",
+  "tipo_recoleccion": "casa",
+  "pago_servicio": "Si"
  }
 ]
