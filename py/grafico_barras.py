@@ -20,6 +20,7 @@ preguntas = [
     "Preferencia recolección",
     "Pagaría por recolección"
 ]
+mover_carpeta('graficas')
 
 x = np.arange(len(preguntas))            
             
@@ -44,7 +45,7 @@ plt.tight_layout()
 plt.savefig('output2.png')
 plt.close()
 
-mover_carpeta('graficas')
+
 
 fig, ax2 = plt.subplots(figsize=(12, 6))
 barras_si2 = ax2.bar(x2 - width/2, y2, width, label='Sí', color='green')
