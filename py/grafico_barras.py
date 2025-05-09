@@ -35,7 +35,7 @@ x2, y2, z2= x[mid:], y_2[mid:], y_2[mid:]
 width = 0.35
 # Primer gráficofig, 
 
-fig, ax = plt.subplots(figsize=(12, 11))
+fig, ax = plt.subplots(figsize=(12, 12))
 barras_si = ax.bar(x1 - width/2, y1, width, label='Sí', color='green')
 barras_no = ax.bar(x1 + width/2, z1, width, label='No', color='red')
 ax.set_ylabel('Cantidad de respuestas')
@@ -43,10 +43,11 @@ ax.set_title('Resultados del formulario sobre uso de aceite de cocina')
 ax.set_xticks(x1)
 ax.set_xticklabels(preguntas[:(len(preguntas)//2)], rotation=45, ha='right')
 ax.legend()
+plt.tight_layout()
 plt.savefig('output2.png')
 plt.close()
 
-fig, ax2 = plt.subplots(figsize=(12, 11))
+fig, ax2 = plt.subplots(figsize=(12, 12))
 barras_si = ax2.bar(x2 - width/2, y2, width, label='Sí', color='green')
 barras_no = ax2.bar(x2 + width/2, z2, width, label='No', color='red')
 ax2.set_ylabel('Cantidad de respuestas')
@@ -54,5 +55,6 @@ ax2.set_title('Resultados del formulario sobre uso de aceite de cocina')
 ax2.set_xticks(x2)
 ax2.set_xticklabels(preguntas[(len(preguntas)//2):], rotation=45, ha='right')
 ax2.legend()
+plt.tight_layout()
 plt.savefig('output3.png')
 plt.close()
