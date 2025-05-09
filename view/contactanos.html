@@ -84,7 +84,7 @@
         <div class="col-md-7 d-flex flex-column justify-content-start">
         <fieldset class="formulario-cliente">
             <h1 class="titulo-formulario">Datos del cliente</h1>
-            <form class="form-datos-cliente" onsubmit="event.preventDefault();">
+            <form class="form-datos-cliente" id="frm" onsubmit="event.preventDefault();">
                 <div class="contenedor-inputs">
                     <label for="nombre">Nombre</label>
                     <input class="inputtxt" id="nombre" type="text" placeholder="Nombre" required>
@@ -101,7 +101,7 @@
                     <label for="mensaje">Mensaje</label>
                     <textarea class="textarea-mensaje" id="mensaje-adicional" placeholder="Escribe tu mensaje aquí"></textarea>
                 </div>
-            <button class="btn-guardar" type="submit" onclick="guardarDatos()">Guardar</button>
+            <button class="btn-guardar" type="submit" >Guardar</button>
             </form>
         </fieldset>
         </div>

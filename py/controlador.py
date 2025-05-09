@@ -1,13 +1,18 @@
 from funciones import *
 
 app=Flask(__name__)
-#CORS(app)
+CORS(app)
 
 carpeta=os.getcwd()
-ruta = os.path.join(carpeta,'json', 'preguntas.json')       
-print('aqui2:' + ruta)  
+
+ruta_contactos = os.path.join(carpeta,'json', 'contactos.json')
+if not os.path.isfile(ruta_contactos):
+    set_json(ruta_contactos, [])
+else:
+    data = get_json(ruta_contactos)
+    
+ruta = os.path.join(carpeta,'json', 'preguntas.json')    
 if not os.path.isfile(ruta):
-    print('aqui3:' + ruta)
     set_json(ruta, [])
 else:
     data = get_json(ruta)
@@ -15,14 +20,24 @@ else:
 
 @app.route('/insertar', methods=['POST'])
 
-def insertar(name):
+
+def insertar(name = ruta_contactos):
     '''Carga la información de un cliente en el archivo clientes.json, primero extrae la informacion del
     json y luego lo guarda los nuevos datos en el archivo clientes.json'''
-    data = request.json()
+    data = request.json
     clientes =get_json(name)
     clientes.append(data)
     set_json(name, clientes)
-    return {"mensaje guardado:": "Clientes insertado de forma correcta" }
+    return {"mensaje:": "Clientes insertado de forma correcta" }
+
+
+
+@app.route('/consultar', methods=['GET'])
+
+def consultar(name = ruta):
+    ''''Carga la información de un cliente en el archivo clientes.json, primero extrae la informacion del'''
+    clientes = get_json(name)
+    return jsonify(clientes)
     
 
 if __name__=="__main__":
