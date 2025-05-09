@@ -10,7 +10,7 @@ document.getElementById("frm").addEventListener('submit',async function(event){
  let mensaje=document.getElementById("mensaje-adicional").value
 
 
- let respuesta=await fetch('http://127.0.0.1:5000/insertar',{
+ let respuesta=await fetch('http://127.0.0.1:5000/insertar_contactanos',{
 
     method:'POST',
     headers:{
