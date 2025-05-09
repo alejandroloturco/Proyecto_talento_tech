@@ -2,7 +2,7 @@ from funciones import *
 
 visitantes = ["Registrados", "No Registrados"]
 # Lista de ejemplo con porcentaje  de visitantes en el orden de Registrados, No Registrados
-visitas = [20, 80]
+visitas = [resultados[0][0],resultados[0][1]]
 #Colores alusivos a la tematica de la pagina
 colores = ["#549C3C", "#FFD33B"]
 explode = (0.05, 0)  # Destaca ligeramente el primer segmento (Registrados)
@@ -24,6 +24,7 @@ plt.tight_layout()
 
 mover_carpeta('graficas')
 plt.savefig('output.png', dpi=300, bbox_inches='tight')
+plt.show()
 plt.close()
 
 
