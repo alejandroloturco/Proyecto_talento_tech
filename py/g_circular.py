@@ -24,7 +24,6 @@ plt.tight_layout()
 
 mover_carpeta('graficas')
 plt.savefig('output.png', dpi=300, bbox_inches='tight')
-plt.show()
 plt.close()
 
 
