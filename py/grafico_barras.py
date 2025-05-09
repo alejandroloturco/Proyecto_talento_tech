@@ -35,7 +35,7 @@ x2, y2, z2= x[mid:], y_2[mid:], y_2[mid:]
 width = 0.35
 # Primer gráficofig, 
 
-fig, ax = plt.subplots(figsize=(12, 6))
+fig, ax = plt.subplots(figsize=(12, 11))
 barras_si = ax.bar(x1 - width/2, y1, width, label='Sí', color='green')
 barras_no = ax.bar(x1 + width/2, z1, width, label='No', color='red')
 ax.set_ylabel('Cantidad de respuestas')
@@ -46,7 +46,7 @@ ax.legend()
 plt.savefig('output2.png')
 plt.close()
 
-fig, ax2 = plt.subplots(figsize=(12, 6))
+fig, ax2 = plt.subplots(figsize=(12, 11))
 barras_si = ax2.bar(x2 - width/2, y2, width, label='Sí', color='green')
 barras_no = ax2.bar(x2 + width/2, z2, width, label='No', color='red')
 ax2.set_ylabel('Cantidad de respuestas')
