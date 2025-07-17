@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReOil PLanet, Aceite usado comvertido en futuro sostenible</title>
+    
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/quienes_somos.css">
+    <link rel="stylesheet" href="../css/formulario.css">
+    <link rel="stylesheet" href="../css/footer.css">
+
+    <script src="../js/datas.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   
+</head>
+<body>
+    <div id="header">
+    <script>
+        // Cargar el contenido de header.html
+        fetch('./header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            })
+            .catch(error => console.error('Error al cargar el header:', error));
+    </script>
+    </div>
+    
+<!-- Hero section  -->
+<div id="hero-section" class="container padding-section">
+    <div class="d-flex row align-items-center">
+        <div class="col-md-12 justify-content-center">
+            <h1 class="h1  color-verde text-center">Contactenos</h1>
+            <h2 class="h5 text-center"> ¿Tienes aceite usado y no sabes qué hacer con él?</h2>
+            <div id="arti1" class="">
+                <p class="text-center"> Ayuda al medio ambiente dándole un manejo responsable.
+                    Llena el formulario o escríbenos por WhatsApp para programar la recolección.
+                    Nuestro equipo te contactará y gestionará el servicio sin costo.
+                </p>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<!-- Seccion Formulario  -->
+<div id="mision-vision" class="overlay-verde">
+    <div class="container padding-section d-flex gap-1">
+        <div class="col-md-2"></div>
+
+        <div class="col-md-3 d-flex flex-column justify-content-start">
+            <div id="contactos">
+                <h5 class="h5 color-amarillo mb-4">Contáctanos</h5>
+                <div class="d-flex gap-1">
+                    <span class="color-amarillo"><i class="fa-solid fa-envelope"></i></span>
+                    <p> reoilplanet@gmail.com</p> 
+                </div>
+                <div class="d-flex gap-1">
+                    <span class="color-amarillo"><i class="fa-solid fa-location-dot"></i></span>
+                    <p>Colombia, Medellín 6043000 ext 2 </p>
+                </div>
+                <div class="d-flex flex-column">
+                    <h6 class="h6">Atención Restaurante</h6>
+                    <div class="d-flex gap-1">
+                        <span class="color-amarillo"><i class="fa-brands fa-whatsapp"></i></span>
+                        <p>(+57) 312 687 1058 </p>
+                    </div>
+                    
+                </div>
+                <div class="d-flex gap-3">
+                    <a href="https://facebook.com" target="_blank" aria-label="Facebook" class="social-icon transition-transform">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" aria-label="Instagram"  class="social-icon transition-transform">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+                
+              
+            </div>
+            
+        </div>
+        <!-- Contenido formulario  -->
+        <div class="col-md-7 d-flex flex-column justify-content-start">
+        <fieldset class="formulario-cliente">
+            <h1 class="titulo-formulario">Datos del cliente</h1>
+            <form class="form-datos-cliente" id="frm" onsubmit="event.preventDefault();">
+                <div class="contenedor-inputs">
+                    <label for="nombre">Nombre</label>
+                    <input class="inputtxt" id="nombre" type="text" placeholder="Nombre" required>
+
+                    <label for="apellido">Apellido</label>
+                    <input class="inputtxt" id="apellido" type="text" placeholder="Apellido" required>
+
+                    <label for="direccion">Dirección</label>
+                    <input class="inputtxt" id="direccion" type="text" placeholder="Dirección" required>
+
+                    <label for="correo">Correo</label>
+                    <input class="inputtxt" id="correo" type="email" placeholder="Correo" required>
+
+                    <label for="mensaje">Mensaje</label>
+                    <textarea class="textarea-mensaje" id="mensaje-adicional" placeholder="Escribe tu mensaje aquí"></textarea>
+                </div>
+            <button class="btn-guardar btn btn-dark" type="submit" >Guardar</button>
+            </form>
+        </fieldset>
+        </div>
+
+    </div>       
+</div>
+
+    
+
+
+    <div id="footer" style="background-color: #71BA45;">
+        <div id="bottom-bar" class="align-items-center">
+            <div class="container d-flex justify-content-between align-items-center">
+                <div class="col-md-6">
+                    <p class="txt-top-bar color-blanco ">2025 todos los derechos reservados</p>
+                </div>
+
+                <div class="col-md-6 d-flex justify-content-end">
+                    <ul class="nav">
+                        <li class="nav-item"><a href="#" class="nav-link color-blanco"> Política de privacidad</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link color-blanco"> Política de recolección</a></li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
+
